@@ -1,7 +1,7 @@
 <?php
 require 'includes/common.php';
 
-$usersa_check="select * from me";
+$usersa_check="select * from hotdeals";
 $select_query_result = mysqli_query($con, $usersa_check) or die(mysqli_error($con));
 $total_rows_fetched = mysqli_num_rows($select_query_result);
 ?>
@@ -27,14 +27,8 @@ $total_rows_fetched = mysqli_num_rows($select_query_result);
         ?>
  
         <div id="content">
-		<!-- Start of first row--> 
-		
-		
-		
-         
 	  
-		
-	<!-- row stacked -->
+	    <!-- row stacked -->
 	
 		<div class="row">
 		<div class="container-fluid">
@@ -108,7 +102,7 @@ $total_rows_fetched = mysqli_num_rows($select_query_result);
 		 $total_rows_fetched--;  ?>
  
   
- <div class="col-md-2 text-center">
+ <div class="col-sm-2 text-center">
 
  
                         <a href="products.php" >
@@ -128,17 +122,17 @@ $total_rows_fetched = mysqli_num_rows($select_query_result);
  
  <!-- Start of second row--> 
  
- <hr>
  <div class="row">
  <div class="container-fluid">
- 
+  <hr>
+
   <h3 style="padding-left:12px; font-size:30px;">Trending Products</h3> 
 
  <div class="col-md-2 text-center">
  
                         <a href="products.php" >
                             <div class="thumbnail">
-                                <img src="img/25.jpg" alt="" style="height:135px;">
+                                <img src="img/25.jpg" alt="" style="height:135px; width:100%;">
                                 <div class="caption">
                                     <h3>Cameras</h3>
                                     <p>Choose among the best available in the world.</p>

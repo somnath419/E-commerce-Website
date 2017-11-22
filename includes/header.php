@@ -17,7 +17,7 @@ $name=$_SESSION['u_name'];
     <body>
 
 
-	<nav class="navbar navbar-inverse navbar-fixed-top"  style="background:lightblue;">
+	<nav class="navbar navbar-inverse navbar-fixed-top"  style="background:#00ff00;">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,6 +27,7 @@ $name=$_SESSION['u_name'];
 				</button>
         <a class="navbar-brand" href="index.php" id="st" style="font-size:20px;" ><span class="glyphicon glyphicon-home"></span>  SomKart</a>
 			</div>
+			
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right link-effect">
                 <?php
