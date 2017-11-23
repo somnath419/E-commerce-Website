@@ -156,7 +156,68 @@ header {
 }
 .a li
 {     
-padding:4px;}
+padding:4px;
 
+}
+
+#imaginary_container{
+    margin-top:20%; /* Don't copy this */
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.a
+{padding:10px;}
+
+#search {
+      height: 2.4em;
+}
+.multi-item-carousel{
+  .carousel-inner{
+    >.item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-22%;
+      }
+      &.right{
+        left:22%;
+      }
+    }
+    .next{
+      left: 22%;
+    }
+    .prev{
+      left: -22%;
+    }
+
+@media  all and (transform-3d), (-webkit-transform-3d) 
+{
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
 
 

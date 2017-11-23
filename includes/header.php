@@ -28,15 +28,32 @@ $name=$_SESSION['u_name'];
                         <a class="navbar-brand" href="index.php"  style="font-size:20px; color:white;" ><span class="glyphicon glyphicon-home"></span>  SomKart</a>
                     </div>
                         
+                        
+                        
+                    <div class="col-sm-6 a">
+                        <input type="text" class="form-control"  placeholder="Search" >
+                            
+                    </div>
+                    <div class="col-sm-1 a">
+                        <button id="search">    
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                        
+                        
+                        
+                        
+                        
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right link-effect">
-                <?php
+                            
+                            
+                <?php 
                 if (isset($_SESSION['email'])) {
                     ?>
                             <li><a href = "cart.php" id="my_id" ><span class = "glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
                                 
-                            <li>
-                            </li>
+                                
                                 
                             <li  class="dropdown" >
                                 <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -56,8 +73,8 @@ $name=$_SESSION['u_name'];
                     <?php
                 } else {
                     ?>
-                            <li><a href="signup.php" id="st"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="login.php" id="st" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><a href="signup.php" id="my_id"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="login.php" id="my_id" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                                 
                                 
 					   <?php
@@ -89,8 +106,7 @@ $name=$_SESSION['u_name'];
                                             <li><a href="#">Casual Shoes</a></li>
                                             <li><a href="#">Formal Shoes</a></li>
                                             <li><a href="#">Sports Shoes</a></li>
-
-                                            
+                                                
                                         </div>
                                             
                                         <div class="col-sm-3 a">
@@ -103,7 +119,7 @@ $name=$_SESSION['u_name'];
                                             <li><a href="#">Product 7</a></li>
                                             <li><a href="#">Product 8</a></li>
                                         </div>
-                                        
+                                            
                                         <div class="col-sm-3 a" >
                                             <li><a href="shirts.php">Product 9</a></li>
                                             <li><a href="jeans.php">Product 10</a></li>
@@ -121,259 +137,410 @@ $name=$_SESSION['u_name'];
                                             <li><a href="#">Sports Shoes</a></li>	
                                         </div>
                                     </div>
-                                    
-                                  </ul> 
+                                        
+                                </ul> 
                             </li>
                                 
                             <li class="dropdown" style="position:initial;">
                                 <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                              Women's Fashion<span class="caret"></span>
+                                    Women's Fashion<span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu m" >
                                     
-                                   <div class="row" >
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>
+                                    <div class="row" >
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
                                         </div>
                                             
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
-                                        </div>
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	</div>
-                                        <div class="col-sm-3" > 
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
-                                        </div>
-                                    </div>
-                                    
-                                  </ul> 
-                                 
-                                    
-                            </li>
-                            
-                            <li class="dropdown" style="position:initial;">
-                                <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Kids<span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu m" >
-                                    
-                                   <div class="row" >
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>
-                                        </div>
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
                                             
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
                                         </div>
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	</div>
-                                        <div class="col-sm-3" > 
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>    
+                                        </div>
+                                        <div class="col-sm-3 a" > 
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>	
                                         </div>
                                     </div>
+                                        
+                                </ul> 
                                     
-                                  </ul> 
-                                 
                                     
                             </li>
                                 
                             <li class="dropdown" style="position:initial;">
                                 <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Home Needs<span class="caret"></span>
+                                    Kids<span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu m" >
                                     
-                                   <div class="row" >
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>
+                                    <div class="row" >
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
                                         </div>
                                             
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>	
                                         </div>
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	</div>
-                                        <div class="col-sm-3" > 
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
+                                        </div>
+                                        <div class="col-sm-3 a" > 
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                          
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>	
                                         </div>
                                     </div>
+                                        
+                                </ul> 
                                     
-                                  </ul> 
-                                 
+                                    
+                            </li>
+                                
+                            <li class="dropdown" style="position:initial;">
+                                <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Home Needs<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu m" >
+                                    
+                                    <div class="row" >
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
+                                        </div>
+                                            
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>	
+                                        </div>
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
+                                        </div>
+                                        <div class="col-sm-3 a" > 
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
+                                        </div>
+                                    </div>
+                                        
+                                </ul> 
+                                    
                                     
                             </li>
                                 
                                 
                             <li class="dropdown" style="position:initial;">
                                 <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                               Dailly Needs<span class="caret"></span>
+                                    Dailly Needs<span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu m" >
                                     
-                                   <div class="row" >
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>
+                                    <div class="row" >
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
                                         </div>
                                             
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
                                         </div>
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	</div>
-                                        <div class="col-sm-3" > 
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
+                                        </div>
+                                        <div class="col-sm-3 a" > 
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>	
                                         </div>
                                     </div>
+                                        
+                                </ul> 
                                     
-                                  </ul> 
-                                 
                                     
                             </li>
                                 
                             <li class="dropdown" style="position:initial;">
                                 <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                               Electronics<span class="caret"></span>
+                                    Electronics<span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu m" >
                                     
-                                   <div class="row" >
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>
-                                            
+                                    <div class="row" >
+                                        <div class="col-sm-3 a" >
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                                
                                         </div>
                                             
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
                                         </div>
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	</div>
-                                        <div class="col-sm-3" > 
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                        </div>
+                                        <div class="col-sm-3 a" > 
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
                                         </div>
                                     </div>
+                                        
+                                </ul> 
                                     
-                                  </ul> 
-                                 
                                     
                             </li>
                                 
                             <li class="dropdown" style="position:initial;">
                                 <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                              Accessories<span class="caret"></span>
+                                    Accessories<span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu m" >
+                                <ul class="dropdown-menu m" style="background-image: lightblue;">
                                     
-                                   <div class="row" >
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>
+                                        <div class="col-sm-3 a" >
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
                                         </div>
                                             
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
                                         </div>
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	</div>
-                                        <div class="col-sm-3" > 
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
                                         </div>
-                                    </div>
+                                        <div class="col-sm-3 a" > 
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>	
+                                        </div>
+                                        
+                                </ul> 
                                     
-                                  </ul> 
-                                 
                                     
                             </li>
                                 
-                           <li class="dropdown" style="position:initial;">
+                            <li class="dropdown" style="position:initial;">
                                 <a href="#" id="my_id" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                              Others<span class="caret"></span>
+                                    Others<span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu m" >
                                     
-                                   <div class="row" >
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>
+                                    <div class="row" >
+                                        <div class="col-sm-3 a" >
+                                           <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
                                         </div>
                                             
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                            <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>	
                                         </div>
-                                        <div class="col-sm-3" >
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	</div>
-                                        <div class="col-sm-3" > 
-                                            <li>Shirts</li>
-                                            <li>Jeans</li>
-                                            <li>Pants</li>	
+                                        <div class="col-sm-3 a" >
+                                           
+                                         <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                        </div>
+                                        <div class="col-sm-3 a" > 
+                                             <li><a href="shirts.php">Product 1</a></li>
+                                            <li><a href="jeans.php">Product 2</a></li>
+                                            <li><a href="trousers.php">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>	
                                         </div>
                                     </div>
+                                        
+                                </ul> 
                                     
-                                  </ul> 
-                                 
                                     
                             </li>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                        </ul>
+                       </ul>
                     </div>
                         
                 </div>
