@@ -30,6 +30,9 @@ require 'includes/common.php';
                 many useful items.
                 Take saman from here otherwise we will fine u.
                 Ok dont take.
+                By the way its up to you whether u take or not.
+
+
                 
                 </p>
                 </div>
