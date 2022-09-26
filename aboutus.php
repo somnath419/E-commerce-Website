@@ -60,7 +60,6 @@ require 'includes/common.php';
             </div>
             
             </div>
-       
         
         <?php require "includes/footer.php"; ?>
     </body>
