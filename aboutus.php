@@ -28,6 +28,7 @@ require 'includes/common.php';
                <p>A private firm providing customers a new shopping experience.
                 We started as online blog and then expanded into a giant store which sells all daily products and 
                 many useful items.
+                Take saman from here otherwise we will fine u.
                 
                 </p>
                 </div>
