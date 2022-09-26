@@ -29,6 +29,7 @@ require 'includes/common.php';
                 We started as online blog and then expanded into a giant store which sells all daily products and 
                 many useful items.
                 Take saman from here otherwise we will fine u.
+                Ok dont take.
                 
                 </p>
                 </div>
